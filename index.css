@@ -1,151 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: orange;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+}
+
+.container {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Big Shoulders Display";
+}
+.text {
+  font-size: 15px;
+  opacity: 0.75;
+  padding: 0.3rem;
+}
+
+.sedans {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 0 0 7px;
+  height: 25rem;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+.button-select {
+  border-radius: 20px;
+  border: 2px solid white;
+  outline: none;
+  height: 2.5rem;
+  width: 8rem;
+  background-color: white;
+  color: orange;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.luxury {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 7px 7px 0;
+  height: 25rem;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+.suvs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: hsl(184, 100%, 22%);
+  border-radius: 0 0 0 0;
+  height: 25rem;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+.suvs button {
+  background-color: white;
+  color: rgb(111, 105, 117);
+}
+
+.luxury button {
+  background-color: white;
+  color: rgb(83, 83, 83);
+}
+
+.button-select:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+
+.suvs .button-select:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+
+.luxury .button-select:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    margin-top: 1.4rem;
   }
-  
-  :root {
-    --primary-text-color: orange;
-    --accent-color: #2294ed;
-    --accent-color-dark: #1d69a3;
+
+  .sedans {
+    height: 27rem;
+    width: 85%;
+    border-radius: 7px 7px 0 0;
+    padding: 10px 37px;
   }
-  
 
-
-.container{
-    margin-top: 15rem;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-   
-    
-
-}
-
-.heading{
-    font-weight: 700;
-    font-size: 32px;
-    font-family: 'Big Shoulders Display';
-}
-.text{
-    font-size: 15px;
-    opacity: 0.75;
-    padding: 0.3rem;
-}
-
-
-.sedans{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 7px 0 0 7px;
-    height: 25rem;
-    padding: 10px 20px;
-    color: white;
-    font-family: 'Lexend Deca';
-    font-weight: 400;
-}
-
-.button-select{
-    border-radius: 20px;
-    border: 2px solid white;
-    outline: none;
-    height: 2.5rem;
-    width: 8rem;
-    background-color: white;
-    color: orange;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-
-.luxury{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 7px 7px 0;
-    height: 25rem;
-    padding: 10px 20px;
-    color: white;
-    font-family: 'Lexend Deca';
-    font-weight: 400;
-}
-
-.suvs{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    background-color: hsl(184, 100%, 22%);
+  .suvs {
+    height: 27rem;
+    width: 85%;
     border-radius: 0 0 0 0;
-    height: 25rem;
-    padding: 10px 20px;
-    color: white;
-    font-family: 'Lexend Deca';
-    font-weight: 400;
+    padding: 10px 37px;
+  }
+
+  .luxury {
+    height: 27rem;
+    width: 85%;
+    border-radius: 0 0 7px 7px;
+    padding: 10px 37px;
+  }
+
+  .button-select {
+    height: 3rem;
+    border-radius: 30px;
+  }
 }
-
-.suvs button{
-    background-color: white;
-    color: rgb(111, 105, 117);
-}
-
-.luxury button{
-    background-color: white;
-    color:  rgb(83, 83, 83);
-}
-
-.button-select:hover{
-    background-color: hsl(31, 77%, 52%);
-    color: white;
-}
-
-.suvs .button-select:hover{
-    background-color: hsl(184, 100%, 22%);
-    color: white;
-}
-
-.luxury .button-select:hover{
-    background-color: hsl(179, 100%, 13%);
-    color: white;
-}
-
-@media screen and (max-width:480px){
-    .container{
-        flex-direction: column;
-        margin-top: 1.4rem;
-    }
-
-    .sedans{
-        height: 27rem;
-        width: 85%;
-        border-radius: 7px 7px 0 0;
-        padding: 10px 37px;
-    }
-
-    .suvs{
-        height: 27rem;
-        width: 85%;
-        border-radius: 0 0 0 0;
-        padding: 10px 37px;
-    }
-
-    .luxury{
-        height: 27rem;
-        width: 85%;
-        border-radius: 0 0 7px 7px;
-        padding: 10px 37px;
-    }
-
-    .button-select{
-        height: 3rem;
-        border-radius: 30px;
-    }
-}
-
