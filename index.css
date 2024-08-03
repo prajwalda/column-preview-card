@@ -12,6 +12,9 @@
   --accent-color-dark: #1d69a3;
 }
 
+.body{
+  font-size: 15px;
+}
 .container {
   margin-top: 15rem;
   display: flex;
@@ -28,6 +31,7 @@
   font-size: 15px;
   opacity: 0.75;
   padding: 0.3rem;
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
 .sedans {
@@ -141,3 +145,4 @@
     border-radius: 30px;
   }
 }
+
